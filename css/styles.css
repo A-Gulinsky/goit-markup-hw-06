@@ -1,18 +1,26 @@
 :root {
+  /* Текстові змінні */
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --interactive-text-color: #2196F3;
   --additional-text-color: #FFFFFF;
   --footer-text-contact: rgba(255, 255, 255, 0.6);
   --logo-text-color: #000000;
+  /* Фонові змінні */
   --primary-bg-color: #F5F5F5;
   --service-bg-color:#C4C4C4;
   --team-bg-color: #F5F4FA;
   --footer-bg-color: #2F303A;
+  /* Інші змінні */
   --additional-btn-color: #188CE8;
   --card-border-color: #EEEEEE;
   --header-line-color: #ECECEC;
   --border-clients-static: #AFB1B8;
+  /* Змінні модального вікна */
+  --modal-bg-color: #FFFFFF;
+  --modal-text-color: #212121;
+  --label-checkbox-span-color: #757575;
+  --modal-field-focus-color: #2196f3;
 }
 
 /* Глобальні налаштування */
@@ -917,7 +925,7 @@ text-align: center;
   min-height: 581px;
   padding: 40px 40px;
 
-  background-color: var(--additional-text-color);
+  background-color: var(--modal-bg-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
               0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -945,7 +953,7 @@ text-align: center;
 
 .modal-button:hover,
 .modal-button:focus {
-  fill: var(--interactive-text-color);
+  fill: var(--modal-field-focus-color);
 }
 
 /* Форма заповнення */
@@ -957,7 +965,7 @@ text-align: center;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--primary-text-color);
+  color: var(--modal-text-color);
 }
 
 .modal-form {
@@ -998,7 +1006,7 @@ text-align: center;
 }
 
 .modal-field input:focus{
-  outline: 1px solid #188CE8;
+  outline: 1px solid var(--modal-field-focus-color);
 
   transition-property: outline;
   transition-duration: 250ms;
@@ -1006,7 +1014,7 @@ text-align: center;
 }
 
 .modal-field:focus-within .svg-modal {
-  fill: #188CE8;
+  fill: var(--modal-field-focus-color);
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -1026,7 +1034,7 @@ text-align: center;
   line-height: 1.16;
 
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--label-checkbox-span-color)
 }
 
 .checked {
@@ -1085,7 +1093,7 @@ text-align: center;
   font-size: 14px;
   line-height: 24px;
 
-  color: #757575;
+  color: var(--label-checkbox-span-color)
 }
 
 .checkbox label a {
@@ -1112,7 +1120,7 @@ text-align: center;
 }
 
 .comment:focus {
-  outline: 1px solid #2196F3;
+  outline: 1px solid var(--modal-field-focus-color);
 
   transition-property: outline;
   transition-duration: 250ms;
