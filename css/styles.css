@@ -826,7 +826,7 @@ text-align: center;
 
   font-size: 16px;
   line-height: 0.8;
-  color: rgba(255, 255, 255, 0.6);
+  color: #FFFFFF;
 
   background-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
@@ -904,6 +904,7 @@ text-align: center;
 }
 
 .modal {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -914,6 +915,7 @@ text-align: center;
 
   min-width: 528px;
   min-height: 581px;
+  padding: 40px 40px;
 
   background-color: var(--additional-text-color);
   border-radius: 4px;
@@ -948,10 +950,7 @@ text-align: center;
 
 /* Форма заповнення */
 
-.modal-title {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+.modal-text {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -962,16 +961,8 @@ text-align: center;
 }
 
 .modal-form {
-  /* width: 448px; */
-
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 448px;
 }
-
-/* .modal-list {
-  display: flex;
-  flex-direction: column;
-} */
 
 .modal-field {
   margin-bottom: 10px;
@@ -1063,22 +1054,19 @@ text-align: center;
 .icon-checked {
   position: absolute;
   top: 50%;
-  left: 0px;
+  left: 12px;
   transform: translate(0, -50%);
 
   z-index: 1;
-  margin-left: 12px;
 } 
 
 .icon-succes {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 12px;
   opacity: 0;
 
   transform: translate(0, -50%);
-
-  margin-left: 12px;
 }  
 
 .checked:checked + .icon-succes{
@@ -1098,7 +1086,6 @@ text-align: center;
   line-height: 24px;
 
   color: #757575;
-
 }
 
 .checkbox label a {
@@ -1133,8 +1120,6 @@ text-align: center;
 }
 
 .button-send {
-  padding-bottom: 40px;
-
   text-align: center;
 }
 
