@@ -740,7 +740,7 @@
 
         <div class="footer-form">
           <h2 class="form-title">Підпишіться на розсилку</h2>
-          <form>
+          <form class="form-send" autocomplete="off">
             <input type="email" name="email" placeholder="E-mail" />
 
             <button class="form-btn" type="submit">
@@ -765,42 +765,85 @@
 
         <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
 
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <ul class="modal-list">
             <li class="modal-field">
-              <label class="modal-lable" for="user-name">Ім'я</label>
-              <input
-                class="modal-input"
-                type="text"
-                name="user-name"
-                id="user-name"
-              />
+              <label class="modal-lable" for="user-name"
+                ><span class="label-span">Ім'я</span></label
+              >
+              <div class="input-box">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                />
+
+                <svg class="svg-modal" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
             </li>
             <li class="modal-field">
-              <label class="modal-lable" for="tel">Телефон</label>
-              <input class="modal-input" type="tel" name="tel" id="tel" />
+              <label class="modal-lable" for="tel"
+                ><span class="label-span">Телефон</span></label
+              >
+              <div class="input-box">
+                <input class="modal-input" type="tel" name="tel" id="tel" />
+
+                <svg class="svg-modal" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </div>
             </li>
             <li class="modal-field">
-              <label class="modal-lable" for="email">Пошта</label>
-              <input class="modal-input" type="email" name="email" id="email" />
+              <label class="modal-lable" for="email"
+                ><span class="label-span">Пошта</span></label
+              >
+              <div class="input-box">
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+
+                <svg class="svg-modal" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-modal-email"></use>
+                </svg>
+              </div>
             </li>
             <li class="modal-field">
-              <label class="modal-lable" for="comments">Коментар</label>
+              <label class="modal-lable" for="comments"
+                ><span class="label-span">Коментар</span></label
+              >
               <textarea
                 class="comment"
                 name="comments"
                 id="comments"
                 cols="30"
                 rows="10"
+                placeholder="Введіть текст"
               ></textarea>
             </li>
           </ul>
 
           <p class="checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
-              >Погоджуюся з розсилкою та приймаю Умови договору</label
-            >
+            <label class="policy">
+              <input class="checked" type="checkbox" name="policy" />
+
+              <svg class="icon-succes" width="16" height="15">
+                <use href="./images/icons.svg#icon-icon-succes"></use>
+              </svg>
+
+              <svg class="icon-checked" width="16" height="15">
+                <use href="./images/icons.svg#icon-icon-checked"></use>
+              </svg>
+
+              <span class="checkbox-span">
+                Погоджуюсь з розсилкою та приймаю <a href="">Умови договору</a>
+              </span>
+            </label>
           </p>
 
           <p class="button-send">
