@@ -7,15 +7,19 @@
   --footer-text-contact: rgba(255, 255, 255, 0.6);
   --logo-text-color: #000000;
   /* Фонові змінні */
+  --additional-bg-color: #FFFFFF;
   --primary-bg-color: #F5F5F5;
   --service-bg-color:#C4C4C4;
   --team-bg-color: #F5F4FA;
   --footer-bg-color: #2F303A;
   /* Інші змінні */
+  --portfolio-text-color: #757575;
+  --list-name-color: #212121;
   --additional-btn-color: #188CE8;
   --card-border-color: #EEEEEE;
   --header-line-color: #ECECEC;
   --border-clients-static: #AFB1B8;
+  --btn-list-color: #F5F4FA;
   /* Змінні модального вікна */
   --modal-bg-color: #FFFFFF;
   --modal-text-color: #212121;
@@ -28,7 +32,7 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   
-  background-color: var(--additional-text-color);
+  background-color: var(--additional-bg-color);
   
   color: var(--secondary-text-color);
 }
@@ -38,7 +42,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   
-  background-color: var(--additional-text-color);
+  background-color: var(--additional-bg-color);
 }
 
 /* Глобальне налаштування контейнеру */
@@ -98,7 +102,7 @@ ul {
 .page-header {
   border-bottom: 1px solid var(--header-line-color);
 
-  background-color: var(--additional-text-color);
+  background-color: var(--additional-bg-color);
 }
 
 /* Лого */
@@ -403,7 +407,7 @@ ul {
               0px 1px 1px rgba(0, 0, 0, 0.14),
               0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  background-color: var(--additional-text-color);
+  background-color: var(--additional-bg-color);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -428,7 +432,7 @@ ul {
 
 .list-name {
   margin-bottom: 10px;
-  color: var(--primary-text-color);
+  color: var(--list-name-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -473,7 +477,7 @@ ul {
 }
 
 .team-svg {
-  fill: var(--border-clients-static);
+  fill: #AFB1B8;
   width: 20px;
   height: 20px;
 
@@ -568,7 +572,7 @@ text-align: center;
 
   border-radius: 4px;
   border: 1px transparent;
-  background-color: var(--team-bg-color);
+  background-color: var(--btn-list-color);
 
   cursor: pointer;
 
@@ -599,7 +603,7 @@ text-align: center;
   margin-bottom: 30px;
   width: 370px;
 
-  background-color: var(--additional-text-color);
+  background-color: var(--additional-bg-color);
 }
 
 .card:nth-child(3n) {
@@ -688,7 +692,7 @@ text-align: center;
 }
 
 .portfolio-text {
-  color: var(--secondary-text-color);
+  color: var(--portfolio-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
@@ -1001,7 +1005,7 @@ text-align: center;
 
 }
 
-.modal-field label {
+.modal-field .modal-lable {
   margin-bottom: 4px;
 }
 
@@ -1096,7 +1100,7 @@ text-align: center;
   color: var(--label-checkbox-span-color)
 }
 
-.checkbox label a {
+.checkbox .policy .checkbox-link {
   color: var(--interactive-text-color);
 }
 
